@@ -1,61 +1,146 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style type="text/css">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    table {
+      border-spacing: 0;
+      font-family: sans-serif;
+      color: #727f80;
+    }
+
+    td {
+      padding: 0;
+    }
+
+    p {
+      Margin: 0;
+    }
+
+    a {
+      color: #F1F1F1;
+      text-decoration: none;
+    }
+
+    img {
+      border: 0;
+    }
 
     /*--- Media Queries --*/
+
     @media screen and (max-width: 400px) {
+      .h1 {
+        font-size: 22px;
+      }
+      .two-column .column,
+      .three-column .column {
+        max-width: 100% !important;
+      }
+      .two-column img {
+        width: 100% !important;
+      }
+      .three-column img {
+        max-width: 60% !important;
+      }
     }
+
     @media screen and (min-width: 401px) and (max-width: 400px) {
+      .two-column .column {
+        max-width: 50% !important;
+      }
+      .three-column .column {
+        max-width: 33% !important;
+      }
     }
+
     @media screen and (max-width:768px) {
+      img.logo {
+        float: none !important;
+        margin-left: 0% !important;
+        max-width: 200px !important;
+      }
+
+      #callout {
+        float: none !important;
+        margin: 0% 0% 0% 0;
+        height: auto;
+        text-align: center;
+        overflow: hidden;
+      }
+      #callout img {
+        max-width: 26px !important;
+      }
+      .two-column .section {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .two-column img {
+        width: 100% !important;
+        height: auto !important;
+      }
+      img.img-responsive {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100% !important;
+      }
+      .content {
+        width: 100%;
+        padding-top: 0px !important;
+      }
     }
   </style>
- </head>
+</head>
+
 <body>
-  <div class="wrapper">
-    <div class="inner-wrapper">
-      <table class="outer-table">
+  <div class="wrapper" style="width: 100%;table-layout: fixed;">
+    <div class="inner-wrapper" style="width: 100%;background-color: #eee;max-width: 670px;margin: 0 auto;">
+      <table class="outer-table" style="width: 100%;max-width: 670px;margin: 0 auto;background-color: #FFF;">
         <tr>
-          <td class="header">
-            <p><a href="#">click to view this email in your browser</a></p>
+          <td class="header" style="background-color: #C2C1C1;border-bottom: 3px solid #81B9C3;">
+            <p style="text-align: center;padding: 1%;font-weight: 500;font-size: 11px;text-transform: uppercase;"><a href="#">click to view this email in your browser</a></p>
           </td>
         </tr>
-      </table><!--end outer table-->
-      <table class="main-table-first">
+      </table>
+      <!--end outer table-->
+      <table class="main-table-first" style="	width: 100%;max-width: 610px;margin: 0 auto;background-color: #FFF;border-radius: 6px;margin-top: 25px;">
         <tr>
-          <td class="two columns">
-            <div class="section">
+          <td class="two columns" style="text-align: center;font-size: 0;padding: 5px 0 10px 0;">
+            <div class="section" style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
               <table width="100%">
                 <tr>
-                  <td class="inner-td">
-                    <table class="content">
+                  <td class="inner-td" style="padding: 10px;">
+                    <table class="content" style="font-size: 16px;line-height: 20px;text-align: justify;width: 100%;padding-top: 20px;">
                       <tr>
-                        <td  align="center">
-                          <img src="https://res.cloudinary.com/mvirginia/image/upload/v1529831158/icons/mockuplogo.png" alt="Logo" class="logo"><!--logo-->
+                        <td align="center" style="display: table;margin: 0 auto;">
+                          <img src="https://res.cloudinary.com/mvirginia/image/upload/v1529831158/icons/mockuplogo.png" alt="Logo" class="logo" style="float: left;margin-left: 5%;max-width: 200px!important;">
+                          <!--logo-->
                         </td>
                       </tr>
                     </table>
                   </td>
                 </tr>
               </table>
-            </div><!--end first of two columns-->
-            <div class="section">
+            </div>
+            <!--end first of two columns-->
+            <div class="section" style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
               <table width="100%">
                 <tr>
-                  <td class="inner-td">
-                    <table class="content">
+                  <td class="inner-td" style="padding: 10px;">
+                    <table class="content" style="width: 100%;padding-top: 20px;">
                       <tr>
                         <td>
-                          <div id="callout">
-                            <ul class="social">
-                              <li><a href="#"><img src="https://res.cloudinary.com/mvirginia/image/upload/v1529831144/icons/facebook-logo-in-circular-button-outlined-social-symbol_1.png" alt="Facebook Icon"></a></li>
-                              <li><a href="#"><img src="https://res.cloudinary.com/mvirginia/image/upload/v1529831144/icons/twitter-circular-button_1.png" alt="Twitter Icon"></a></li>
-                              <li><a href="#"><img src="https://res.cloudinary.com/mvirginia/image/upload/v1529831144/icons/pinterest-social-visual-website-logotype.png" alt="Pinterest Icon"></a></li>
-                              <li><a href="#"><img src="https://res.cloudinary.com/mvirginia/image/upload/v1529831144/icons/google-plus-circular-button.png" alt="Google Plus Icon"></a></li>
+                          <div id="callout" style="float: right;margin: 4% 5% 2% 0;height: auto;overflow: hidden;">
+                            <ul class="social" style="list-style-type: none;margin-top: 1%;padding: 0;">
+                              <li style="display: inline-block;"><a href="# "><img src="https://res.cloudinary.com/mvirginia/image/upload/v1529831144/icons/facebook-logo-in-circular-button-outlined-social-symbol_1.png " alt="Facebook Icon" style="max-width: 20px;margin-bottom: 0;padding-bottom: 0;padding-right:6px;"></a></li>
+                              <li style="display: inline-block;"><a href="# "><img src="https://res.cloudinary.com/mvirginia/image/upload/v1529831144/icons/twitter-circular-button_1.png " alt="Twitter Icon" style="max-width: 20px;margin-bottom: 0;padding-bottom: 0;padding-right:6px;"></a></li>
+                              <li style="display: inline-block;"><a href="# "><img src="https://res.cloudinary.com/mvirginia/image/upload/v1529831144/icons/pinterest-social-visual-website-logotype.png " alt="Pinterest Icon" style="max-width: 20px;margin-bottom: 0;padding-bottom: 0;padding-right:6px;"></a></li>
+                              <li style="display: inline-block;"><a href="# "><img src="https://res.cloudinary.com/mvirginia/image/upload/v1529831144/icons/google-plus-circular-button.png " alt="Google Plus Icon" style="max-width: 20px;margin-bottom: 0;padding-bottom: 0;padding-right:6px;"></a></li>
                             </ul>
                           </div>
                         </td>
@@ -64,48 +149,55 @@
                   </td>
                 </tr>
               </table>
-            </div><!--end second of two columns-->
+            </div>
+            <!--end second of two columns-->
           </td>
         </tr>
-      </table><!--end first main table-->
-      <table class="outer-table"> <!--this class is full width-->
+      </table>
+      <!--end first main table-->
+      <table class="outer-table " style="width: 100%;max-width: 670px;margin: 0 auto;background-color: #FFF; ">
+        <!--this class is full width-->
         <tr>
-          <td class="image">
-            <img src="http://res.cloudinary.com/mvirginia/image/upload/c_scale,w_600/v1529832308/banner.png" alt="banner"><!--green background img with text-->
+          <td class="image ">
+            <img src="http://res.cloudinary.com/mvirginia/image/upload/c_scale,w_600/v1529832308/banner.png " alt="banner" style="width: 100%;max-width: 670px;height: auto;">
+            <!--green background img with text-->
           </td>
         </tr>
 
-      </table> <!--end banner image-->
-      <table class="main-table">
+      </table>
+      <!--end banner image-->
+      <table class="main-table" style="width: 100%;max-width: 610px;margin: 0 auto;background-color: #FFF;border-radius: 6px;">
         <tr>
-          <td class="one-column">
-            <table width="100%">
+          <td class="one-column ">
+            <table width="100% ">
               <tr>
-                <td class="inner-td">
-                  <p class="h2">Weekly Newsletter</p>
-                  <p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur neque quam. Sed sem nisl, malesuada vel fringilla et, aliquet id elit. Praesent viverra a diam ut viverra. Aenean elementum magna sed nisl gravida malesuada. Proin at ultricies ipsum</p>
-                  <p class="button-holder-center">
-                    <a class="btn" href="#">Read More</a>
+                <td class="inner-td" style="font-size: 16px;line-height: 20px;text-align: justify;padding: 10px;">
+                  <p class="h2" style="text-align: center;font-size: 23px;font-weight: 600;line-height: 45px;margin: 12px;color: #4A4A4A;">Weekly Newsletter</p>
+                  <p class="center " style="text-align: center;max-width: 580px;line-height: 24px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur neque quam. Sed sem nisl, malesuada vel fringilla et, aliquet id elit. Praesent viverra a diam ut viverra. Aenean elementum magna sed nisl gravida malesuada. Proin
+                    at ultricies ipsum</p>
+                  <p class="button-holder-center" style="text-align: center;margin: 5% 2% 3% 0;">
+                    <a class="btn" style="font-size: 15px;font-weight: 600;background: #81BAC6;color: #FFF;text-decoration: none;padding: 9px 16px;border-radius: 28px;" href="# ">Read More</a>
                   </p>
                 </td>
               </tr>
             </table>
           </td>
-        </tr><!--end heading paragraph and button section-->
+        </tr>
+        <!--end heading paragraph and button section-->
         <tr>
-          <td class="two columns">
-            <div class="section">
-              <table width="100%">
+          <td class="two-columns " style="text-align: center;font-size: 0;padding: 5px 0 10px 0; ">
+            <div class="section " style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
+              <table width="100% ">
                 <tr>
-                  <td class="inner-td">
-                    <table class="content">
+                  <td class="inner-td" style="padding: 10px;">
+                    <table class="content " style="font-size: 16px;line-height: 20px;text-align: justify; ">
                       <tr>
                         <td>
-                          <img src="https://res.cloudinary.com/mvirginia/image/upload/v1529834892/search.png" alt="search icon" class="img-responsive">
+                          <img src="https://res.cloudinary.com/mvirginia/image/upload/v1529834892/search.png " alt="search icon" class="img-responsive" style="width: 100%;max-width: 280px;height: auto;">
                         </td>
                       </tr>
                       <tr>
-                        <td class="text">
+                        <td class="text" style="padding: 10px 0;">
                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur neque quam. Sed sem nisl, malesuada vel fringilla et, aliquet id elit. Praesent viverra a diam ut viverra. Aenean elementum magna sed nisl gravida malesuada.</p>
                         </td>
                       </tr>
@@ -113,19 +205,20 @@
                   </td>
                 </tr>
               </table>
-            </div><!--end first of two columns-->
-            <div class="section">
-              <table width="100%">
+            </div>
+            <!--end first of two columns-->
+            <div class="section " style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
+              <table width="100% ">
                 <tr>
-                  <td class="inner-td">
-                    <table class="content">
+                  <td class="inner-td" style="padding: 10px;">
+                    <table class="content " style="font-size: 16px;line-height: 20px;text-align: justify; ">
                       <tr>
                         <td>
-                          <img src="https://res.cloudinary.com/mvirginia/image/upload/v1529834892/chat.png" alt="text bubble icon" class="img-responsive">
+                          <img src="https://res.cloudinary.com/mvirginia/image/upload/v1529834892/chat.png " alt="text bubble icon " class="img-responsive " style="width: 100%;max-width: 280px;height: auto;">
                         </td>
                       </tr>
                       <tr>
-                        <td class="text">
+                        <td class="text " style="padding: 10px 0;">
                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur neque quam. Sed sem nisl, malesuada vel fringilla et, aliquet id elit. Praesent viverra a diam ut viverra. Aenean elementum magna sed nisl gravida malesuada.</p>
                         </td>
                       </tr>
@@ -133,161 +226,178 @@
                   </td>
                 </tr>
               </table>
-            </div><!--end second of two columns-->
-          </td>
-        </tr><!--end two column section-->
-      </table><!--end main-table-->
-      <table class="outer-table-two" style="background-color: #c2c1c1;">
-        <tr>
-          <td class="three-column">
-            <div class="section">
-              <table width="100%">
-                <tr>
-                  <td class="inner-td">
-                    <table class="content">
-                      <tr>
-                        <td>
-                          <img src="https://res.cloudinary.com/mvirginia/image/upload/v1529835770/mouse.png" alt="mouse image">
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text">
-                          <p>Lorem ipsum dolor sit amet consectetur elit.</p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </div><!--end fisrt of three column section-->
-            <div class="section">
-              <table width="100%">
-                <tr>
-                  <td class="inner-td">
-                    <table class="content">
-                      <tr>
-                        <td>
-                          <img src="https://res.cloudinary.com/mvirginia/image/upload/v1529835889/mac.png" alt="desktop image">
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text">
-                          <p>Lorem ipsum dolor sit amet consectetur elit.</p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </div><!--end second of three column section-->
-            <div class="section">
-              <table width="100%">
-                <tr>
-                  <td class="inner-td">
-                    <table class="content">
-                      <tr>
-                        <td>
-                          <img src="https://res.cloudinary.com/mvirginia/image/upload/v1529835770/phone.png" alt="mobile image">
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text">
-                          <p>Lorem ipsum dolor sit amet consectetur elit.</p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </div><!--end third of three column section-->
-          </td> <!--end three column section-->
-        </tr>
-      </table> <!--end outer table 2-->
-      <table class="main-table">
-        <tr>
-          <td class="two-column">
-            <div class="section">
-              <table width="100%">
-                <tr>
-                  <td class="inner-td">
-                    <table class="content">
-                      <tr>
-                        <td>
-                          <img src="https://res.cloudinary.com/mvirginia/image/upload/v1529836702/pie-chart.png" alt="pie chart image">
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                            <p class="h3">Article Content</p>
-                            <p class="h3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id dolor eget tortor tempor tristique a vel quam. Vivamus auctor nunc ac auctor egestas. Sed turpis nisl, viverra eu massa sit amet, accumsan bibendum lorem. Suspendisse nec mollis dui, nec lacinia tellus. Nunc eu justo ultricies, fringilla leo vitae, laoreet risus.</p>
-                            <br>
-                            <p class="h3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id dolor eget tortor tempor tristique a vel quam. Vivamus auctor nunc ac auctor egestas. Sed turpis nisl, viverra eu massa sit amet, accumsan bibendum lorem.</p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </div> <!--end fisrt div column-->
-            <div class="section">
-              <table width="100%">
-                <tr>
-                  <td class="inner-td">
-                    <table class="content">
-                      <tr>
-                        <td>
-                            <p class="h3">Article Content</p>
-                            <p class="h3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id dolor eget tortor tempor tristique a vel quam. Vivamus auctor nunc ac auctor egestas. Sed turpis nisl, viverra eu massa sit amet, accumsan bibendum lorem. Suspendisse nec mollis dui, nec lacinia tellus. Nunc eu justo ultricies, fringilla leo vitae, laoreet risus.</p>
-                            <br>
-                            <p class="h3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id dolor eget tortor tempor tristique a vel quam. Vivamus auctor nunc ac auctor egestas. Sed turpis nisl, viverra eu massa sit amet, accumsan bibendum lorem.</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <img src="https://res.cloudinary.com/mvirginia/image/upload/v1529836702/users.png" alt="users image">
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </div> <!--end second div column-->
+            </div>
+            <!--end second of two columns-->
           </td>
         </tr>
+        <!--end two column section-->
+      </table>
+      <!--end main-table-->
+      <table class="outer-table-two " style="width: 100%;max-width: 670px;margin: 22px auto;background-color: #C2C1C1;border-bottom: 3px solid #81B9C3;border-top: 3px solid #81B9C3;">
         <tr>
-          <td class="one-column">
-            <table width="100%">
+          <td class="three-column" style="text-align: center;font-size: 0;padding: 10px 0 30px 0;">
+            <div class="section" style="width: 100%;max-width: 200px;display: inline-block;vertical-align: top;">
+              <table width="100% ">
+                <tr>
+                  <td class="inner-td" style="padding: 10px;">
+                    <table class="content " style="width: 100%;padding-top: 20px;font-size: 16px;line-height: 20px; ">
+                      <tr>
+                        <td>
+                          <img src="https://res.cloudinary.com/mvirginia/image/upload/v1529835770/mouse.png " alt="mouse image " style="width: 100%;max-width: 125px;height: auto;">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text ">
+                          <p style="margin-top: 6px;color: #FFF;font-size: 18px;font-weight: 500;line-height: 23px;">Lorem ipsum dolor sit amet consectetur elit.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!--end fisrt of three column section-->
+            <div class="section " style="width: 100%;max-width: 200px;display: inline-block;vertical-align: top;">
+              <table width="100% ">
+                <tr>
+                  <td class="inner-td" style="padding: 10px;">
+                    <table class="content " style="width: 100%;padding-top: 20px;font-size: 16px;line-height: 20px; ">
+                      <tr>
+                        <td>
+                          <img src="https://res.cloudinary.com/mvirginia/image/upload/v1529835889/mac.png " alt="desktop image " style="width: 100%;max-width: 125px;height: auto;">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text ">
+                          <p style="margin-top: 6px;color: #FFF;font-size: 18px;font-weight: 500;line-height: 23px;">Lorem ipsum dolor sit amet consectetur elit.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!--end second of three column section-->
+            <div class="section " style="width: 100%;max-width: 200px;display: inline-block;vertical-align: top;">
+              <table width="100% ">
+                <tr>
+                  <td class="inner-td" style="padding: 10px;">
+                    <table class="content " style="width: 100%;padding-top: 20px;font-size: 16px;line-height: 20px; ">
+                      <tr>
+                        <td>
+                          <img src="https://res.cloudinary.com/mvirginia/image/upload/v1529835770/phone.png " alt="mobile image " style="width: 100%;max-width: 125px;height: auto;">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text ">
+                          <p style="margin-top: 6px;color: #FFF;font-size: 18px;font-weight: 500;line-height: 23px;">Lorem ipsum dolor sit amet consectetur elit.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!--end third of three column section-->
+          </td>
+          <!--end three column section-->
+        </tr>
+      </table>
+      <!--end outer table 2-->
+      <table class="main-table" style="width: 100%;max-width: 610px;margin: 0 auto;background-color: #FFF;border-radius: 6px;">
+        <tr>
+          <td class="two-columns " style="text-align: center;font-size: 0;padding: 5px 0 10px 0; ">
+            <div class="section " style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top; ">
+              <table width="100% ">
+                <tr>
+                  <td class="inner-td" style="padding: 10px;">
+                    <table class="content " style="width: 100%;padding-top: 20px;max-width: 300px; ">
+                      <tr>
+                        <td>
+                          <img src="https://res.cloudinary.com/mvirginia/image/upload/v1529836702/pie-chart.png " alt="pie chart image " style="width: 100%;max-width: 280px;height: auto;margin-bottom: 10px">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text" style="padding: 10px 0;">
+                          <p class="h3 " style="text-align: center;font-size: 21px;font-weight: 600;margin-bottom: 10px;color: #4A4A4A;">Article Content</p>
+                          <p style="margin-top: 6px;color: #4A4A4A;font-size: 14px;font-weight: 500;line-height: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id dolor eget tortor tempor tristique a vel quam.</p>
+                          <br>
+                          <p style="margin-top: 6px;color: #4A4A4A;font-size: 14px;font-weight: 500;line-height: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id dolor eget tortor tempor tristique a vel quam. </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!--end fisrt div column-->
+            <div class="section " style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top; ">
+              <table width="100% ">
+                <tr>
+                  <td class="inner-td" style="padding: 10px;">
+                    <table class="content " style="width: 100%;padding-top: 20px; ">
+                      <tr>
+                        <td class="text" style="padding: 10px 0;">
+                          <p class="h3 " style="text-align: center;font-size: 21px;font-weight: 600;margin-bottom: 10px;color: #4A4A4A;">Article Content</p>
+                          <p style="margin-top: 6px;color: #4A4A4A;font-size: 14px;font-weight: 500;line-height: 20px;margin-bottom: 10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id dolor eget tortor tempor tristique a vel quam.</p>
+                          <br>
+                          <p style="margin-top: 6px;color: #4A4A4A;font-size: 14px;font-weight: 500;line-height: 20px;margin-bottom: 10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id dolor eget tortor tempor tristique a vel quam. </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="https://res.cloudinary.com/mvirginia/image/upload/v1529836702/users.png " alt="users image " style="width: 100%;max-width: 280px;height: auto;">
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!--end second div column-->
+          </td>
+        </tr>
+        <tr>
+          <td class="one-column ">
+            <table width="100% ">
               <tr>
-                <td class="inner-bottom">
-                  <p class="h1">The Real Story</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id dolor eget tortor tempor tristique a vel quam. Vivamus auctor nunc ac auctor egestas. Sed turpis nisl, viverra eu massa sit amet, accumsan bibendum lorem. Suspendisse nec mollis dui, nec lacinia tellus. Nunc eu justo ultricies, fringilla leo vitae, laoreet risus.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id dolor eget tortor tempor tristique a vel quam. Vivamus auctor nunc ac auctor egestas. Sed turpis nisl, viverra eu massa sit amet, accumsan bibendum lorem. Suspendisse nec mollis dui, nec lacinia tellus. Nunc eu justo ultricies, fringilla leo vitae, laoreet risus. Morbi sed lectus dictum, molestie metus a, tristique sapien. Integer a quam dui. Nullam fermentum maximus nunc vitae scelerisque.</p>
-                  <div class="button-holder">
-                    <a href="" class="btn">Read More</a>
+                <td class="inner-bottom " style="padding: 22px;">
+                  <p class="h1 " style="text-align: center!important;font-size: 25px!important;font-weight: 600;line-height: 45px;margin: 12px 0 20px 0;color: #4A4A4A;">The Real Story</p>
+                  <p style="font-size: 16px;line-height: 24px;text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id dolor eget tortor tempor tristique a vel quam. Vivamus auctor nunc ac auctor egestas. Sed turpis nisl, viverra eu massa sit amet, accumsan bibendum lorem. Suspendisse nec
+                    mollis dui, nec lacinia tellus. Nunc eu justo ultricies, fringilla leo vitae, laoreet risus.</p>
+                  <p style="font-size: 16px;line-height: 24px;text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id dolor eget tortor tempor tristique a vel quam. Vivamus auctor nunc ac auctor egestas. Sed turpis nisl, viverra eu massa sit amet, accumsan bibendum lorem. Suspendisse nec
+                    mollis dui, nec lacinia tellus. Nunc eu justo ultricies, fringilla leo vitae, laoreet risus. Morbi sed lectus dictum, molestie metus a, tristique sapien. Integer a quam dui. Nullam fermentum maximus nunc vitae scelerisque.</p>
+                  <div class="button-holder" style="float: right;margin: 5% 0 3% 0;">
+                    <a href=" " class="btn" style="font-size: 15px;font-weight: 600;background: #81BAC6;color: #FFF;text-decoration: none;padding: 9px 16px;border-radius: 28px;">Read More</a>
                   </div>
                 </td>
               </tr>
             </table>
           </td>
         </tr>
-      </table> <!--end main table-->
-      <table class="outer-table-three">
+      </table>
+      <!--end main table-->
+      <table class="outer-table-three " style="width: 100%;max-width: 670px;margin: 22px auto;background-color: #C2C1C1;border-top: 3px solid #81B9C3;">
         <tr>
-          <td class="one-column">
-            <table width="100%">
+          <td class="one-column ">
+            <table width="100% ">
               <tr>
-                <td class="footer">
-                  <img src="" alt="">
-                  <p class="footer">100 st Road My City, My State, 01001<br>&copy; Hello, 2018<br><a href="#">Unsubscribe</a></p>
+                <td class="footer " style="width: 100%;background-color: #C2C1C1;margin: 0 auto;color: #FFF;">
+                  <img src="https://res.cloudinary.com/mvirginia/image/upload/v1529831158/icons/mockuplogo.png" alt="Logo" class="logo" style="max-width: 135px;margin: 0 auto;display: block;padding: 4% 0 1% 0">
+                  <p class="footer " style="	text-align: center;color: #FFF!important;line-height: 30px;	padding-bottom: 4%;text-transform: uppercase;">100 st Road My City, My State, 01001<br>&copy; Hello, 2018<br><a href="# ">Unsubscribe</a></p>
                 </td>
               </tr>
             </table>
           </td>
         </tr>
-      </table> <!--end outer-table-three-->
-    </div> <!--end inner-wrapper-->
-  </div> <!--end wrapper-->
+      </table>
+      <!--end outer-table-three-->
+    </div>
+    <!--end inner-wrapper-->
+  </div>
+  <!--end wrapper-->
 </body>
+
 </html>
 
 <!--https://www.youtube.com/watch?v=7FcVjXkNH4g-->
